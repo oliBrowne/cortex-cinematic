@@ -1,0 +1,38 @@
+diff --git a/docs/vision/understand-the-cortex-vision.md b/docs/vision/understand-the-cortex-vision.md
+index 6b3033c..db6d6e8 100644
+--- a/docs/vision/understand-the-cortex-vision.md
++++ b/docs/vision/understand-the-cortex-vision.md
+@@ -107,6 +107,24 @@ Deployment path = business model: solo → department appliance → nodes multip
+ 
+ ## 6. Hardware verdict (2026-07-28)
+ 
++> **Partly superseded by ADR-0014 (2026-08-20), `docs/adr/0014-cosuite-hardware-led-pivot.md`.**
++> Two bullets below no longer hold as written, and are kept for the record rather than edited away:
++>
++> - *"never manufactured hardware"* — still true of **manufacture**, no longer true of **assembly**.
++>   ADR-0014 commits to a prebuilt path where we assemble, image, certify and ship a unit from
++>   off-the-shelf components. No custom silicon, board, or enclosure; that part of the refusal
++>   stands, as does the supply-chain argument — ADR-0014 knowingly takes the smaller version of the
++>   exposure. Warranty, RMA and working capital move onto our balance sheet, which §12's
++>   partner-supplied Spark tier had deliberately kept off it.
++> - *"the seam is built, the local implementation is not"* — superseded by
++>   `feat/appliance-model-plane`. `packages/shared/src/model-plane.ts` makes the base URL
++>   configurable, and `startup-guard.ts:85` makes an off-box model plane a startup failure under
++>   `CORTEX_DEPLOYMENT=appliance`. **The branch is not merged to `main`, and the vLLM path has
++>   never been run end to end** (`docs/handoff/PILOT-DOGFOOD-RUNBOOK.md:362`, tracker #130). Until
++>   it has, claims stay in the enforcement form, never the performance form.
++>
++> The mic-hardware verdict immediately below is **not** superseded and remains in force.
++
+ - **Mic hardware: no.** Reverses two documented strategic constraints ("no proprietary recorder, ever"; "no custom hardware"). Platform notes give speaker identity free; a room mic gives raw audio, and diarization error becomes ACL-inheritance error (unknown #9). Firmware/certification/supply chain kills two-founder velocity. Consent friction.
+ - **Local compute node: yes — as software appliance, never manufactured hardware.** "Node in a box" = one image (docker-compose / NixOS) running the whole stack incl. vLLM open-weight generation on the customer's own mini-PC/VM. One command up, default-deny, brain never touches the internet. If demand proves: partner with a NUC-class vendor; never manufacture.
+ - Easy setup is a **software** property; shipping hardware makes setup harder (procurement, IT approval, logistics).
+@@ -270,6 +288,8 @@ Direction adopted; details below marked open where undecided.
+ 
+ ## Changelog
+ 
++- 2026-08-20 — ADR-0014 (Co-Suite hardware-led pivot): the product becomes a box. **Co-Suite** is the machine plus the stack that ships on it; **Cortex** narrows to the memory engine inside it; Conscience stays the governance plane; Cornea stays internal-only. Two purchase paths against one signed image — prebuilt by us (assembled, imaged, certified from commodity parts, build-to-order, no speculative inventory) and bring-your-own-box meeting a spec that does not yet exist (#119). Assembly, not design: no custom silicon, board, or enclosure. Mass ingest demoted from the pitch to a benefit of owning the box. Moat stated as by-combination — "nobody has assembled this", never "nobody has thought of this". §12's retention posture retained and load-bearing, because the code now sits on hardware we handed over. **§6 and §12 amended — see the superseding note in §6.** Four risks move onto our balance sheet that §12's partner-supplied Spark tier kept off it: supply/lead time (#120), working capital (#121), warranty/RMA (#123), assembly and certification (#124). Drivers: the original problem set, unchanged; plus per-token compute cost; plus information security stated as *locality* rather than only access control — an argument that is false today and only becomes true on a customer-owned box. **Two gaps recorded rather than papered over:** the compute-cost driver has no cost model, unit economics or token arithmetic anywhere in the repo, and there is no hardware price, spec, margin or lead time. **The ADR in this repo is a reconstruction** from the twenty tracker issues citing it; the original was authored outside version control and has never been committed. Status stays `RECONSTRUCTED DRAFT` until reconciled.
++
+ - 2026-08-07 — ADR-0011 (services and pricing posture): take the FDE money, not the FDE identity. Charge implementation explicitly ($25-75K, the band comparables establish) rather than internalising it as Palantir does — affordable at their scale, fatal at ours. Fast to first value, long to full value: Palantir's own bootcamp is 1-5 days to a use case on real data, then 8-12 weeks to production, which is §7's "setup speed sells the demo" already. Every FDE task gated on the compile test ("useful for the next 20 customers"), F-Prime's 30-40%-of-deployments threshold adopted as an operating metric from customer one. **Two assumptions previously treated as known are recorded as unevidenced**: that regulated buyers prefer high-touch deployment (no study found at all), and that services work compiles into product (correlation only, with a published counter-argument). The ratchet is now commercially load-bearing, not only technically — it is the whole difference between a software multiple and a services one.
+ - 2026-08-06 — ADR-0010 (ingest auth strategy): BYOA for wave 1, rented for the tail, `cortex install --org` as the department Day-0 product rather than a convenience wrapper. Google sequenced before Slack. Public app suite rejected for the wedge (shared client id = shared blast radius; marketplace review per platform; inverts the regulated pitch) and left open as a distribution question. DM ingest and org-wide overwatch rejected by design. Slack mechanics verified against current docs — see the ADR's Evidence section, including two items that need Slack directly.
+ 

@@ -1,0 +1,109 @@
+# Suite Enhancement Checklist
+
+- [x] Identify the two unsuitable screenshot-like artwork placements in the current Suite sequence.
+- [x] Source two replacement black-and-white visuals that fit the CORTEX editorial theme.
+- [x] Replace the unsuitable images and preserve the one-image-per-act rhythm.
+- [x] Add alternating left-to-right and right-to-left Suite act reveal motion.
+- [x] Build a visual end call to action with an animated CORTEX wordmark.
+- [x] Verify desktop and mobile rendering, then save a checkpoint.
+- [x] Replace the newly flagged Suite visual with the supplied lung engraving.
+- [x] Rebuild the closing Suite composition into a stronger visual call to action.
+- [x] Verify the revised Suite at desktop and mobile scales, then save a checkpoint.
+- [x] Identify the current Suite closing motif, appliance graphic, and Home options slot after the shared-project sync.
+- [x] Source and upload the requested NVIDIA, Apple, and AMD brand marks.
+- [x] Replace the Suite closing motif and simplify the appliance visual.
+- [x] Add the requested partner logos to the Home options area.
+- [x] Verify desktop and mobile layouts, then save a checkpoint.
+- [x] Inspect the current Edge cage and identify the brain-image dependency.
+- [x] Replace it with a new original image-free infrastructure cage treatment.
+- [x] Verify the Edge cage at desktop and mobile widths, then save a checkpoint.
+- [x] Inspect the Home appliance section after the latest shared revision.
+- [x] Move NVIDIA, AMD, and Apple into a large animated side rail.
+- [x] Verify the redesigned appliance section at desktop and mobile widths, then save a checkpoint.
+- [x] Inspect the latest appliance and memory visual implementations.
+- [x] Replace the appliance plate with animated 2.5D mini Spark-style interconnected boxes.
+- [x] Replace the failed memory lattice with a cleaner visual treatment.
+- [x] Verify the Home-page visual replacements at desktop and mobile widths, then save a checkpoint.
+- [x] Inspect the updated Home appliance section after the shared-project sync.
+- [x] Generate a new material infrastructure visual to replace the final brain graphic.
+- [x] Turn the appliance area into a full-width polished 2.5D Spark network and relocate its operating labels beneath the nodes.
+- [x] Add and enlarge additional local-compute hardware options.
+- [x] Verify the redesigned Home sections at desktop and mobile widths, then save a checkpoint.
+- [x] Inspect the current explorer hover state and Spark-node coordinates.
+- [x] Make architecture highlighting fully hover-driven and refine the Spark network’s centered composition.
+- [x] Verify the interaction and responsive layout, then save a checkpoint.
+- [x] Inspect the brain-image markup and current Edge cage mobile rules.
+- [x] Add the requested fade-in and subtle glow hover treatment to the brain image.
+- [x] Tune the Edge cage composition for small screens.
+- [x] Verify desktop and mobile behavior, then save a checkpoint.
+- [x] Inspect the Edge footage markup and select its static fallback asset.
+- [x] Add low-bandwidth and playback-error fallback behavior to the appliance proof.
+- [x] Verify the fallback at desktop and mobile widths, then save a checkpoint.
+- [x] Inspect the current navigation and theme primitives after the latest shared rollback.
+- [x] Add a persistent accessible light-and-dark theme toggle in the navigation.
+- [x] Add a smoothly revealed Back to Top control for long pages.
+- [x] Verify both utilities across desktop and mobile layouts, then save a checkpoint.
+- [x] Inspect the current theme provider’s startup and storage behavior.
+- [x] Detect the system theme when no explicit selection has been stored.
+- [x] Persist explicit theme selections reliably across reloads and visits.
+- [x] Verify first-visit and saved-preference behavior, then save a checkpoint.
+- [x] Inspect the current theme utility and Back to Top control behavior.
+- [x] Add smooth visual transitions between theme states.
+- [x] Add a scroll-progress ring to the Back to Top control.
+- [x] Verify desktop and mobile interaction behavior, then save a checkpoint.
+- [x] Audit below-the-fold images and existing scroll-driven visual layers.
+- [x] Add native lazy-loading to all below-the-fold images.
+- [x] Add a subtle reduced-motion-safe background parallax treatment.
+- [x] Verify loading attributes and responsive parallax behavior, then save a checkpoint.
+- [x] Inspect the current navigation structure and active-link styling.
+- [x] Reorder links to Home, Suite, Values, The Edge, One-Pager, FAQ.
+- [x] Make the active link larger and physically isolated by gaps on both sides.
+- [x] Verify desktop and mobile navigation, then save a checkpoint.
+- [x] Inspect the active navigation layout and locate the remaining unwanted white treatment.
+- [x] Add a gliding isolated-selection animation and make gaps around the selected destination more pronounced.
+- [x] Remove the remaining unwanted white treatment.
+- [x] Verify desktop and mobile navigation, then save a checkpoint.
+- [x] Inspect the latest navigation selection sizing, gaps, and animation implementation.
+- [x] Use Anime.js to animate the active selection and unselected-item hover feedback.
+- [x] Reduce active-control scale and create literal visible gaps around it across responsive layouts.
+- [x] Verify desktop and mobile navigation interactions, then save a checkpoint.
+- [x] Inspect the application shell and shared navigation click behavior for page-transition integration points.
+- [x] Implement a subtle, accessible olive loading animation for internal page changes.
+- [x] Verify desktop, mobile, and reduced-motion transition behavior, then save a checkpoint.
+- [x] Inspect the scroll-driven hero-video implementation and its current light-mode rendering behavior.
+- [x] Make the interactive hero video fully functional and visually coherent in light mode.
+- [x] Verify the light and dark hero-video interactions alongside the page-transition indicator.
+- [x] Inspect the synced navigation markup, active-state styles, and preview visibility after recent shared changes.
+- [x] Make the active control and literal separation visibly distinct on desktop and mobile.
+- [x] Verify the corrected navigation states and save a checkpoint.
+- [x] Audit light-mode asset rendering and existing olive detail styles across the shared pages.
+- [x] Apply a cohesive black-and-white treatment to visual assets in light mode.
+- [x] Extend olive accents to selected text, rules, labels, and interface details without overusing color.
+- [x] Verify the revised light-mode Home, Suite, and secondary-page visual system, then save a checkpoint.
+- [x] Audit the existing contact-form implementation, light-mode long-form copy, and monochrome image surfaces.
+- [x] Add olive focus, valid, and invalid field states to the contact form.
+- [x] Correct light-mode long-form text colors where contrast is insufficient.
+- [x] Add a reduced-motion-safe olive image-hover response in light mode.
+- [x] Verify accessibility, desktop/mobile presentation, and save a checkpoint.
+- [x] Locate and read the three newly supplied context files.
+- [x] Inventory factual, numerical, operational, and product claims across the site.
+- [x] Compare each claim against the supplied context and revise unsupported wording.
+- [x] Validate revised copy and save a checkpoint with a source-alignment record.
+- [x] Inspect the current hardware-option rail and post-audit deployment copy.
+- [x] Restore NVIDIA, AMD, Apple, and ASUS references with accurate sourcing-and-setup language.
+- [x] Clarify customer-owned qualifying local-compute support versus sourced hardware.
+- [x] Verify responsive hardware presentation and save a checkpoint.
+- [x] Audit Home, Suite, One-Pager, Edge, and navigation at mobile widths for text collisions or obscured controls.
+- [x] Refine mobile type scale, spacing, sticky media, hardware rail, and access-form layout to prevent overlays.
+- [x] Verify the revised mobile routes at representative phone widths and save a checkpoint.
+- [x] Inspect the shared footer, privacy-policy route, and existing local preference storage.
+- [x] Add an accessible cookie-consent banner with a direct Privacy Policy link and persisted choice.
+- [x] Refine the policy and footer layouts for phone-width readability and touch targets.
+- [x] Verify consent persistence plus mobile privacy and footer routes, then save a checkpoint.
+- [x] Inspect Co-Suite color tokens and purple accent usage across the live Suite route.
+- [x] Replace purple accents with black, ivory, and restrained olive details.
+- [x] Verify Co-Suite desktop and mobile palette consistency, then save a checkpoint.
+- [x] Inventory every olive accent across shared components and page-specific styles.
+- [x] Remove olive from non-Evidence content, controls, and decorative surfaces.
+- [x] Preserve olive only in the Co-Suite Evidence section and validate hierarchy across responsive routes.
+- [x] Save a checkpoint with the evidence-only accent system.

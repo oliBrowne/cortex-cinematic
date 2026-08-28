@@ -1,0 +1,8 @@
+# Treat generated visual and media assets as binary files.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.mp4 binary
+*.pdf binary
+*.ttf binary

@@ -1,0 +1,20 @@
+@media (max-width: 640px) {
+  .cortex-footer .cortex-footer-stage { padding-right: 1.25rem; padding-left: 1.25rem; }
+  .cortex-footer .cortex-footer-calibration { gap: .55rem; padding-block: 1rem; font-size: 7px; line-height: 1.55; }
+  .cortex-footer .cortex-footer-stage > div:nth-child(2) { gap: 2.75rem; padding-block: 3.5rem; }
+  .cortex-footer .cortex-footer-links { margin-top: .9rem; }
+  .cortex-footer .cortex-footer-links li + li { margin-top: 0; }
+  .cortex-footer .cortex-footer-links a { width: 100%; min-height: 44px; justify-content: space-between; font-size: 9px; }
+  .cortex-footer .cortex-footer-links a svg { opacity: 1; transform: none; }
+  .cortex-footer .cortex-footer-links a::after { transform: scaleX(.22); }
+  .cortex-footer .cortex-footer-social { padding-left: 11px; }
+  .cortex-footer .cortex-footer-social-icon { width: 32px; height: 32px; }
+  .cortex-footer .cortex-footer-access { padding-top: 1.5rem; padding-left: 0; border-top: 1px solid rgb(238 233 221 / .18); border-left: 0; }
+  .cortex-footer .cortex-footer-access::before { top: -1px; left: 0; width: 38px; height: 1px; }
+  .cortex-footer .cortex-footer-form-row { height: 54px; max-width: none; }
+  .cortex-footer .cortex-footer-form-row input { font-size: 9px; }
+  .cortex-footer .cortex-footer-form-row button { width: 44px; height: 44px; }
+  .cortex-footer .cortex-footer-manifest { padding-block: 1.5rem; }
+  .cortex-footer .cortex-footer-manifest a { width: 100%; min-height: 44px; align-items: center; }
+  .cortex-footer .cortex-footer-legal { gap: .8rem; padding-block: 1.4rem; line-height: 1.5; }
+}

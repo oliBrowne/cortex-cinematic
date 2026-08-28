@@ -1,0 +1,5 @@
+Contact: mailto:hello@cortexbrain.ai?subject=Security%20Report
+Policy: https://cortexbrain.ai/.well-known/security-policy.txt
+Canonical: https://cortexbrain.ai/.well-known/security.txt
+Preferred-Languages: en
+Expires: 2027-08-27T00:00:00.000Z

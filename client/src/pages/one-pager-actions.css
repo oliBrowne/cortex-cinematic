@@ -1,0 +1,8 @@
+/* Compact one-pager actions: a quiet document control, not a second primary CTA. */
+.paper-actions { position:relative; z-index:2; display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:18px; }
+.paper-download,.paper-share { display:inline-flex; align-items:center; gap:7px; min-height:36px; padding:9px 11px; border:1px solid rgb(238 233 221 / .52); background:transparent; color:#eee9dd; cursor:pointer; font:700 7px/1 Inter,system-ui,sans-serif; letter-spacing:.15em; text-decoration:none; transition:background-color 160ms cubic-bezier(.23,1,.32,1), color 160ms cubic-bezier(.23,1,.32,1), border-color 160ms cubic-bezier(.23,1,.32,1), transform 160ms cubic-bezier(.23,1,.32,1), box-shadow 160ms cubic-bezier(.23,1,.32,1); }
+.paper-download:hover,.paper-share:hover,.paper-share.is-confirmed { background:#eee9dd; border-color:#eee9dd; box-shadow:0 7px 20px rgb(10 10 10 / .14); color:#0a0a0a; transform:translateY(-2px); }
+.paper-download.is-preparing { cursor:progress; opacity:.82; }
+.paper-download:focus-visible,.paper-share:focus-visible { outline:2px solid #eee9dd; outline-offset:4px; }
+.paper-download:active,.paper-share:active { transform:scale(.97); }
+@media (max-width:767px) { .paper-actions { margin-top:15px; gap:7px; }.paper-download,.paper-share { min-height:34px; padding:8px 10px; font-size:6.5px; } }

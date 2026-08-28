@@ -1,0 +1,3 @@
+# Anime Navigation Validation
+
+The desktop navigation now uses an Anime.js-driven selected-control movement rather than the previous oversized static active treatment. The selected route’s dimensions are only modestly larger than the base links, while its dark control carries a literal 10px page-ground knockout that visibly separates it from the track. Unselected links receive short Anime.js lift-and-scale feedback on hover and focus. Mobile retains a smaller dark active card with an actual border and a six-pixel knockout, without attempting a desktop-style horizontal travel inside the two-column grid.

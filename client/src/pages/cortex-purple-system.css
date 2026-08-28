@@ -1,0 +1,439 @@
+/*
+  CORTEX white + purple system
+  Visual migration only. Existing product, hardware, and legal copy remain untouched.
+*/
+@font-face {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/manus-storage/anton-regular_e68c89ac.ttf") format("truetype");
+}
+
+:root {
+  --cortex-purple: #6438d8;
+  --cortex-purple-deep: #3a1f86;
+  --cortex-purple-surface: #5a31c4;
+  --cortex-purple-shadow: #4d2aa8;
+  --cortex-cream: #f2e8d0;
+  --cortex-paper: #faf5e8;
+  --cortex-acid: #d8df75;
+  --cortex-hairline: #7d5ae0;
+  --cortex-dim: #c3aef0;
+  --background: var(--cortex-purple);
+  --foreground: var(--cortex-cream);
+  --primary: var(--cortex-purple-deep);
+  --primary-foreground: var(--cortex-cream);
+  --border: rgb(242 232 208 / 0.36);
+  --ring: var(--cortex-purple);
+}
+
+html,
+body {
+  background: var(--cortex-purple) !important;
+  color: var(--cortex-cream) !important;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif !important;
+}
+
+::selection { background: var(--cortex-acid); color: var(--cortex-purple-deep); }
+
+:is(.hero-title, .editorial-title, .final-title, .cinema-heading, .document-page h1, .document-page h2, .privacy-page h1, .privacy-page h2, .suite-paper h1, .suite-paper h2, .suite-paper h3) {
+  font-family: "Anton", "Arial Narrow", Impact, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.012em !important;
+  text-transform: uppercase;
+}
+
+:is(.eyebrow, .tech-badge, .signal-label, .section-index, .story-guide, .document-label, .morphic-official-link, .nav-link, .nav-cta, .button-primary, .button-quiet, .cookie-consent, .cortex-footer, .privacy-page) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace;
+}
+
+/* Shared navigation becomes a purple instrument panel. */
+.site-nav,
+.secondary-nav,
+.privacy-nav {
+  border-color: rgb(242 232 208 / 0.4) !important;
+  background: rgb(100 56 216 / 0.92) !important;
+  box-shadow: 0 12px 30px rgb(58 31 134 / 0.16);
+}
+
+.site-nav > div,
+.secondary-nav > div { background: transparent !important; }
+.brand-lockup,
+.nav-link,
+.mobile-menu-trigger,
+.privacy-wordmark,
+.privacy-return { color: var(--cortex-cream) !important; }
+.mobile-nav { background: var(--cortex-purple-deep) !important; border-color: rgb(242 232 208 / 0.34) !important; }
+
+.nav-cta,
+.button-primary,
+.morphic-mobile-access {
+  background: var(--cortex-acid) !important;
+  border-color: var(--cortex-acid) !important;
+  color: var(--cortex-purple-deep) !important;
+}
+
+.button-quiet { border-color: var(--cortex-acid) !important; color: var(--cortex-acid) !important; }
+
+.morphic-official { --morphic-isolation-gap: var(--cortex-purple) !important; }
+.morphic-official .glass { border-color: rgb(242 232 208 / 0.45) !important; background: rgb(58 31 134 / 0.8) !important; box-shadow: 0 10px 26px rgb(58 31 134 / 0.24) !important; }
+.morphic-official-link { color: rgb(242 232 208 / 0.82) !important; }
+.morphic-official-link:not(.morphic-official-active)::after { background: var(--cortex-acid) !important; }
+.morphic-gliding-selection { border-color: var(--cortex-acid) !important; background: var(--cortex-acid) !important; box-shadow: 0 0 0 7px var(--cortex-purple), 0 7px 15px rgb(58 31 134 / 0.3) !important; }
+.morphic-official-active { color: var(--cortex-purple-deep) !important; }
+.morphic-gliding-selection::before,
+.morphic-gliding-selection::after { background: var(--cortex-acid) !important; box-shadow: 0 0 8px rgb(237 255 69 / 0.7) !important; }
+.morphic-official-link:focus-visible,
+.morphic-official-active:focus-visible { outline-color: var(--cortex-acid) !important; }
+
+/* The illustrated hero stays cinematic but becomes an ink-on-purple opening act. */
+.cortex-home { background: var(--cortex-purple) !important; color: var(--cortex-cream) !important; }
+.handdrawn-hero-video { filter: saturate(1.18) contrast(1.04) hue-rotate(4deg) !important; }
+.handdrawn-hero-video ~ .hero-scrim {
+  background: linear-gradient(90deg, rgb(58 31 134 / 0.84) 0%, rgb(100 56 216 / 0.62) 34%, rgb(100 56 216 / 0.16) 66%, rgb(58 31 134 / 0.42) 100%) !important;
+}
+.hero-title { text-shadow: 0 4px 28px rgb(58 31 134 / 0.45) !important; }
+.eyebrow { color: var(--cortex-acid); }
+.tech-badge { border-color: rgb(242 232 208 / 0.72) !important; color: var(--cortex-cream) !important; }
+.tech-badge span { background: var(--cortex-acid) !important; }
+.story-guide b,
+.cinema-signal i,
+.arrival-rule { background: var(--cortex-acid) !important; }
+.signal-label { border-color: rgb(237 255 69 / 0.68) !important; color: var(--cortex-acid) !important; }
+
+/* Light paper sections make purple the typographic and structural color. */
+.cortex-home :is(.section-shell, .architecture-explorer) {
+  background: var(--cortex-paper) !important;
+  color: var(--cortex-purple-deep) !important;
+  border-color: rgb(58 31 134 / 0.2) !important;
+}
+.cortex-home :is(.section-shell, .architecture-explorer) :is(h2, h3, p, span, strong, b, .row-chevron) { color: var(--cortex-purple-deep) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .eyebrow { color: var(--cortex-purple) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) :is(.section-shell::before, .section-rule) { background: var(--cortex-purple) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) :is(.boundary-diagram, .deployment-table, .metric-band, .image-rows, .image-row, .deployment-head, .deployment-row) { border-color: rgb(58 31 134 / 0.25) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .boundary-diagram { background: linear-gradient(135deg, rgb(100 56 216 / 0.1), transparent 52%) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) :is(.diagram-flow b, .diagram-sync, .diagram-cortex) { border-color: rgb(58 31 134 / 0.42) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .diagram-cortex { background: var(--cortex-purple) !important; color: var(--cortex-cream) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .diagram-cortex * { color: var(--cortex-cream) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .image-row:hover { background: rgb(100 56 216 / 0.07) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .deployment-note { border-color: var(--cortex-purple) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .cortex-sunburst-center { fill: var(--cortex-paper) !important; stroke: var(--cortex-purple) !important; }
+.cortex-home :is(.section-shell, .architecture-explorer) .cortex-sunburst-breadcrumb button:hover { color: var(--cortex-purple) !important; }
+
+/* Retain tactile proof fields in saturated purple instead of black. */
+.cortex-home :is(.artifact-atlas, .floor-evidence, .memory-evidence, .final-cta, .cortex-footer) {
+  background: var(--cortex-purple) !important;
+  border-color: rgb(242 232 208 / 0.34) !important;
+}
+.cortex-home .artifact-card { background: radial-gradient(ellipse at 50% 42%, rgb(242 232 208 / 0.13), transparent 52%), var(--cortex-purple-shadow) !important; border-color: rgb(242 232 208 / 0.3) !important; }
+.cortex-home .artifact-card::after { background: linear-gradient(0deg, var(--cortex-purple-deep) 0%, transparent 58%) !important; }
+.floor-evidence::before { background: linear-gradient(90deg, var(--cortex-purple-deep) 0%, rgb(100 56 216 / 0.74) 33%, transparent 72%), linear-gradient(0deg, var(--cortex-purple-deep) 0%, transparent 35%) !important; }
+.memory-evidence::after,
+.final-cta-scrim { background: linear-gradient(90deg, var(--cortex-purple-deep) 0%, rgb(58 31 134 / 0.72) 48%, rgb(100 56 216 / 0.12) 100%) !important; }
+.final-cta-art { filter: saturate(0.72) sepia(0.12) hue-rotate(195deg) !important; }
+.cortex-footer-grid { background-image: linear-gradient(rgb(242 232 208 / 0.07) 1px, transparent 1px), linear-gradient(90deg, rgb(242 232 208 / 0.07) 1px, transparent 1px) !important; }
+.cortex-footer-stage::before,
+.cortex-footer-legal::after { background: var(--cortex-acid) !important; }
+.cortex-footer :is(.cortex-footer-brand, .cortex-footer-links a, .cortex-footer-manifest a, .cortex-footer-legal a) { color: var(--cortex-cream) !important; }
+.cortex-footer :is(.cortex-footer-social-icon, .cortex-footer-mark, .cortex-footer-form-row) { border-color: rgb(242 232 208 / 0.42) !important; }
+.cortex-footer-form-row button:hover { background: var(--cortex-acid) !important; color: var(--cortex-purple-deep) !important; }
+
+/* Legal documents read as editorial paper with a purple public-facing masthead. */
+.document-page { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+.document-page main > section { background: var(--cortex-purple) !important; border-color: rgb(242 232 208 / 0.38) !important; color: var(--cortex-cream) !important; }
+.document-page main > section :is(h1, p) { color: var(--cortex-cream) !important; }
+.document-page article { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+.document-page article :is(p, h2, span) { color: var(--cortex-purple-deep) !important; }
+.document-page article :is(.border-t, .border-b) { border-color: rgb(58 31 134 / 0.2) !important; }
+.document-page .document-label { color: var(--cortex-purple) !important; }
+
+.privacy-page { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+.privacy-hero { background: radial-gradient(circle at 80% 25%, rgb(237 255 69 / 0.25), transparent 25%), linear-gradient(127deg, var(--cortex-purple-deep), var(--cortex-purple) 60%, var(--cortex-purple-surface)) !important; border-color: rgb(242 232 208 / 0.34) !important; }
+.privacy-hero :is(h1, p, span, b) { color: var(--cortex-cream) !important; }
+.privacy-hero-copy > p { color: var(--cortex-acid) !important; }
+.privacy-status { border-color: rgb(242 232 208 / 0.4) !important; background: rgb(58 31 134 / 0.35) !important; }
+.privacy-layout { background: var(--cortex-paper) !important; }
+.privacy-layout :is(h2, p, a, span) { color: var(--cortex-purple-deep) !important; }
+.privacy-rail a,
+.privacy-document,
+.privacy-section { border-color: rgb(58 31 134 / 0.2) !important; }
+.privacy-section a { color: var(--cortex-purple) !important; }
+.privacy-contact { background: var(--cortex-acid) !important; color: var(--cortex-purple-deep) !important; }
+.privacy-contact :is(h2, p, span) { color: var(--cortex-purple-deep) !important; }
+.privacy-contact a { background: var(--cortex-purple-deep) !important; color: var(--cortex-cream) !important; }
+.privacy-footer { background: var(--cortex-purple-deep) !important; color: var(--cortex-cream) !important; }
+.privacy-footer a { color: var(--cortex-acid) !important; }
+
+/* Consent becomes a small cream field with a decisive acid-yellow approval control. */
+.cookie-consent { border-color: rgb(58 31 134 / 0.45) !important; background: var(--cortex-paper) !important; box-shadow: 0 18px 55px rgb(58 31 134 / 0.28), 0 0 0 1px rgb(242 232 208 / 0.62) !important; color: var(--cortex-purple-deep) !important; }
+.cookie-consent-copy p,
+.cookie-consent-copy span { color: var(--cortex-purple-deep) !important; }
+.cookie-consent a,
+.cookie-consent button { border-color: rgb(58 31 134 / 0.48) !important; color: var(--cortex-purple-deep) !important; }
+.cookie-consent a:hover,
+.cookie-consent a:focus-visible,
+.cookie-consent-essential:hover,
+.cookie-consent-essential:focus-visible { border-color: var(--cortex-purple) !important; color: var(--cortex-purple) !important; }
+.cookie-consent-accept { background: var(--cortex-acid) !important; border-color: var(--cortex-acid) !important; color: var(--cortex-purple-deep) !important; }
+.cookie-consent a:focus-visible,
+.cookie-consent button:focus-visible { outline-color: var(--cortex-purple) !important; }
+
+/* Suite already uses a paper route; align its foundation with the guide exactly. */
+.suite-paper { --paper: var(--cortex-paper); --violet: var(--cortex-purple-deep); background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+.suite-paper-nav { border-top-color: var(--cortex-purple) !important; background: rgb(250 245 232 / 0.94) !important; }
+
+.suite-paper .suite-paper-nav,
+.suite-paper .suite-paper-nav > div {
+  background: var(--cortex-purple) !important;
+  border-color: rgb(242 232 208 / 0.4) !important;
+}
+.suite-paper .suite-paper-brand,
+.suite-paper .suite-paper-menu,
+.suite-paper .suite-paper-mobile a { color: var(--cortex-cream) !important; }
+.suite-paper .suite-paper-brand img { filter: none !important; }
+.suite-paper .suite-paper-access { background: var(--cortex-acid) !important; border-color: var(--cortex-acid) !important; color: var(--cortex-purple-deep) !important; }
+.suite-paper .suite-paper-mobile { background: var(--cortex-purple-deep) !important; border-color: rgb(242 232 208 / 0.3) !important; }
+
+.suite-paper .suite-paper-intro,
+.suite-paper .suite-terminal {
+  background: radial-gradient(circle at 74% 43%, rgb(237 255 69 / 0.13), transparent 24%), var(--cortex-purple) !important;
+  border-color: rgb(242 232 208 / 0.34) !important;
+  color: var(--cortex-cream) !important;
+}
+.suite-paper :is(.suite-paper-intro h1, .suite-paper-close h2, .suite-paper-intro p, .suite-terminal-copy > p, .suite-terminal-copy > span, .suite-monument-core span, .suite-monument-scale) { color: var(--cortex-cream) !important; }
+.suite-paper .suite-act {
+  background: var(--cortex-paper) !important;
+  border-color: rgb(58 31 134 / 0.2) !important;
+  color: var(--cortex-purple-deep) !important;
+}
+.suite-paper .suite-act:nth-of-type(odd) { background: rgb(242 232 208 / 0.9) !important; }
+.suite-paper .suite-act :is(h2, h3, p, span, strong, b, aside) { color: var(--cortex-purple-deep) !important; }
+.suite-paper .suite-act-label,
+.suite-paper .suite-terminal-copy > span { border-color: var(--cortex-purple) !important; }
+.suite-paper .suite-act-copy aside { border-left-color: var(--cortex-purple) !important; }
+.suite-paper .suite-act-art { border-color: rgb(58 31 134 / 0.32) !important; background: radial-gradient(circle at 50% 48%, rgb(100 56 216 / 0.14), transparent 60%), rgb(242 232 208 / 0.55) !important; }
+.suite-paper .suite-act-art img { filter: invert(21%) sepia(83%) saturate(2385%) hue-rotate(245deg) brightness(83%) contrast(104%) !important; mix-blend-mode: multiply !important; }
+.suite-paper .suite-terminal pre { border-color: rgb(242 232 208 / 0.42) !important; background: rgb(58 31 134 / 0.27) !important; color: var(--cortex-cream) !important; }
+.suite-paper .suite-paper-close { background: var(--cortex-acid) !important; border-color: var(--cortex-purple-deep) !important; color: var(--cortex-purple-deep) !important; }
+.suite-paper .suite-paper-close :is(h2, p, span) { color: var(--cortex-purple-deep) !important; }
+.suite-paper .suite-paper-close a { background: var(--cortex-purple-deep) !important; border-color: var(--cortex-purple-deep) !important; color: var(--cortex-cream) !important; }
+.suite-paper .suite-monument-core { border-color: var(--cortex-acid) !important; background: var(--cortex-purple-deep) !important; box-shadow: 0 0 0 12px rgb(242 232 208 / 0.08), 0 0 42px rgb(237 255 69 / 0.18) !important; }
+.suite-paper .suite-monument-rings i { background: linear-gradient(90deg, transparent, rgb(242 232 208 / 0.68), transparent) !important; }
+
+/* Refinement pass: cream is the primary contrast color; acid is a small signal only. */
+:is(.nav-cta, .button-primary, .morphic-mobile-access) {
+  background: var(--cortex-cream) !important;
+  border-color: var(--cortex-cream) !important;
+  color: var(--cortex-purple-deep) !important;
+}
+.morphic-gliding-selection { background: var(--cortex-cream) !important; border-color: var(--cortex-cream) !important; }
+.morphic-official-link:not(.morphic-official-active)::after { background: var(--cortex-cream) !important; }
+.morphic-gliding-selection::before,
+.morphic-gliding-selection::after { background: var(--cortex-cream) !important; box-shadow: 0 0 8px rgb(242 232 208 / 0.5) !important; }
+.eyebrow,
+.privacy-hero-copy > p { color: var(--cortex-cream) !important; }
+.tech-badge span,
+.story-guide b,
+.arrival-rule { background: var(--cortex-acid) !important; }
+.signal-label { border-color: rgb(242 232 208 / 0.62) !important; color: var(--cortex-cream) !important; }
+.cookie-consent-accept { background: var(--cortex-purple) !important; border-color: var(--cortex-purple) !important; color: var(--cortex-cream) !important; }
+.privacy-contact,
+.suite-paper .suite-paper-close { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+.privacy-contact a,
+.suite-paper .suite-paper-close a { background: var(--cortex-purple) !important; border-color: var(--cortex-purple) !important; color: var(--cortex-cream) !important; }
+.suite-paper .suite-paper-access,
+.paper-page .nav-cta { background: var(--cortex-cream) !important; border-color: var(--cortex-cream) !important; color: var(--cortex-purple-deep) !important; }
+.paper-page .paper-actions :is(.paper-download, .paper-share):hover { background: var(--cortex-cream) !important; border-color: var(--cortex-cream) !important; color: var(--cortex-purple-deep) !important; }
+.document-page .access-band,
+.document-page .access-dark { background: radial-gradient(ellipse at 50% 43%, rgb(242 232 208 / 0.14), transparent 25%), repeating-conic-gradient(from 0deg at 50% 43%, rgb(242 232 208 / 0.2) 0 0.28deg, transparent 0.28deg 4deg), var(--cortex-purple-deep) !important; }
+
+/* The physical proof and hardware rail now sit on cream rather than black. */
+.cortex-home .floor-evidence,
+.cortex-home .floor-evidence .appliance-estate,
+.cortex-home .floor-evidence .spark-estate {
+  background: radial-gradient(ellipse at 55% 50%, rgb(100 56 216 / 0.18), transparent 31%), var(--cortex-paper) !important;
+}
+.cortex-home .floor-evidence .estate-grid,
+.cortex-home .floor-evidence .spark-ambient { opacity: 0.32 !important; background-image: linear-gradient(rgb(58 31 134 / 0.3) 1px, transparent 1px), linear-gradient(90deg, rgb(58 31 134 / 0.3) 1px, transparent 1px) !important; }
+.cortex-home .floor-evidence .estate-plate {
+  border-color: rgb(58 31 134 / 0.45) !important;
+  background: rgb(250 245 232 / 0.92) !important;
+  box-shadow: 0 28px 70px rgb(58 31 134 / 0.18) !important;
+  color: var(--cortex-purple-deep) !important;
+}
+.cortex-home .floor-evidence .estate-plate :is(header, footer, header b, strong, span, em, b) { color: var(--cortex-purple-deep) !important; border-color: rgb(58 31 134 / 0.26) !important; }
+.cortex-home .floor-evidence .estate-coreline .estate-led,
+.cortex-home .floor-evidence .estate-plate footer i { background: var(--cortex-acid) !important; box-shadow: 0 0 14px rgb(216 223 117 / 0.55) !important; }
+.cortex-home .spark-link { stroke: var(--cortex-purple) !important; }
+.cortex-home .spark-box,
+.cortex-home .spark-node-core .spark-box {
+  border-color: rgb(58 31 134 / 0.62) !important;
+  background: linear-gradient(145deg, rgb(250 245 232 / 0.95), rgb(100 56 216 / 0.18) 55%, var(--cortex-purple-deep) 56%) !important;
+  box-shadow: 12px 12px 0 rgb(100 56 216 / 0.12), 20px 20px 29px rgb(58 31 134 / 0.2) !important;
+}
+.cortex-home .spark-box :is(b, span, em),
+.cortex-home .spark-node > small,
+.cortex-home .spark-caption { color: var(--cortex-purple-deep) !important; }
+.cortex-home .spark-box i { background: var(--cortex-acid) !important; box-shadow: 0 0 12px rgb(216 223 117 / 0.7) !important; }
+
+.cortex-home .section-appliance .hardware-logo-rail { border-color: rgb(58 31 134 / 0.46) !important; }
+.cortex-home .section-appliance .hardware-logo-rail::before { background: var(--cortex-purple) !important; box-shadow: 0 68px 0 rgb(100 56 216 / 0.55), 0 136px 0 rgb(100 56 216 / 0.3) !important; }
+.cortex-home .section-appliance .hardware-logo-rail > p,
+.cortex-home .section-appliance .hardware-rail-brand,
+.cortex-home .section-appliance .hardware-rail-brand span,
+.cortex-home .section-appliance .hardware-rail-brand::after { color: var(--cortex-purple-deep) !important; }
+.cortex-home .section-appliance .hardware-rail-brand { border-color: rgb(58 31 134 / 0.22) !important; }
+.cortex-home .section-appliance .hardware-rail-brand:hover { background: linear-gradient(90deg, rgb(100 56 216 / 0.12), transparent) !important; }
+.cortex-home .section-appliance .hardware-rail-brand img { filter: brightness(0) !important; }
+
+/* Replace dark internal evidence panels with purple values—never black. */
+.cortex-home .memory-evidence { background: linear-gradient(118deg, var(--cortex-purple-deep), var(--cortex-purple)) !important; }
+.cortex-home .memory-vault-core { border-color: var(--cortex-cream) !important; background: var(--cortex-purple-deep) !important; }
+.cortex-home .memory-record { border-color: rgb(242 232 208 / 0.44) !important; background: linear-gradient(90deg, rgb(242 232 208 / 0.16), rgb(58 31 134 / 0.1)) !important; }
+.cortex-home .memory-vault :is(.memory-vault-core span, .memory-record span, .memory-record b, .memory-vault-caption) { color: var(--cortex-cream) !important; }
+.cortex-home .memory-record i { background: var(--cortex-acid) !important; box-shadow: 0 0 10px rgb(216 223 117 / 0.6) !important; }
+.cortex-home :is(.architecture-lattice, .architecture-lattice-detail, .suite-triad-frame, .suite-triad-tabs button) { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; border-color: rgb(58 31 134 / 0.24) !important; }
+.cortex-home .suite-triad-frame::after { background: linear-gradient(90deg, var(--cortex-paper) 0%, transparent 65%), linear-gradient(0deg, var(--cortex-paper) 0%, transparent 50%) !important; }
+.cortex-home .suite-triad-tabs button.active { background: var(--cortex-purple) !important; color: var(--cortex-cream) !important; }
+
+.edge-cage,
+.edge-readout,
+.edge-assembly,
+.edge-decision,
+.edge-proof-plate,
+.edge-assembly-chassis { background: var(--cortex-purple-deep) !important; }
+.edge-proof-plate,
+.edge-assembly-chassis { border-color: rgb(242 232 208 / 0.45) !important; }
+.edge-proof-plate :is(button, span, b, small, em, footer),
+.edge-assembly-chassis :is(span, b, small, em) { color: var(--cortex-cream) !important; }
+.edge-proof-plate .edge-plate-vent i { background: rgb(242 232 208 / 0.32) !important; }
+.edge-proof-plate .edge-plate-appliance { background: linear-gradient(145deg, rgb(242 232 208 / 0.16), rgb(58 31 134 / 0.68)) !important; }
+
+/* Values & Culture: turn legacy low-contrast gold details into clear acid-yellow signal markers. */
+.values-page { background: var(--cortex-purple-deep) !important; }
+.values-page .values-hero { border-color: rgb(242 232 208 / 0.34) !important; background: radial-gradient(circle at 73% 35%, rgb(242 232 208 / 0.12), transparent 19%), radial-gradient(ellipse at 8% 100%, rgb(58 31 134 / 0.9), transparent 49%), linear-gradient(116deg, var(--cortex-purple-deep), var(--cortex-purple)) !important; }
+.values-page .values-hero::after { background: linear-gradient(0deg, var(--cortex-purple-deep), transparent) !important; }
+.values-page .values-hero-grid { opacity: 0.72 !important; }
+.values-page .values-hero-grid i { background: linear-gradient(transparent, rgb(242 232 208 / 0.12) 13% 42%, rgb(237 255 69 / 0.74) 50%, rgb(242 232 208 / 0.12) 58% 87%, transparent) !important; }
+.values-page .values-hero-copy .eyebrow { color: var(--cortex-acid) !important; }
+.values-page .values-hero-copy > p:not(.eyebrow) { color: rgb(242 232 208 / 0.84) !important; }
+.values-page .values-hero-rule span { color: var(--cortex-acid) !important; }
+.values-page .values-hero-rule i { background: linear-gradient(90deg, var(--cortex-acid), rgb(242 232 208 / 0.74), transparent) !important; }
+.values-page .values-hands-wrap { overflow: hidden; border: 1px solid rgb(242 232 208 / 0.48); background: radial-gradient(circle at 62% 42%, rgb(242 232 208 / 0.16), transparent 17%), linear-gradient(132deg, rgb(58 31 134 / 0.92), rgb(100 56 216 / 0.42)) !important; box-shadow: 20px 24px 0 rgb(58 31 134 / 0.32), 0 0 0 8px rgb(242 232 208 / 0.045); }
+.values-page .values-hands-wrap::before { border-color: rgb(242 232 208 / 0.58) !important; box-shadow: 0 0 0 48px rgb(242 232 208 / 0.05), 0 0 36px rgb(242 232 208 / 0.14) !important; }
+.values-page .values-hands-caption { border-color: rgb(237 255 69 / 0.76) !important; background: rgb(58 31 134 / 0.84) !important; color: var(--cortex-acid) !important; }
+.values-page .values-manifest { background: linear-gradient(180deg, var(--cortex-purple-deep), var(--cortex-purple) 72%, var(--cortex-purple-deep)) !important; }
+.values-page .values-manifest-rail { color: var(--cortex-acid) !important; }
+.values-page .values-manifest-rail i { background: linear-gradient(90deg, rgb(237 255 69 / 0.72), rgb(242 232 208 / 0.28), transparent) !important; }
+.values-page .value-manifest { border-color: rgb(242 232 208 / 0.35) !important; }
+.values-page .value-manifest:nth-child(odd) { background: linear-gradient(90deg, rgb(242 232 208 / 0.075), transparent 63%) !important; }
+.values-page .value-manifest::before { position: absolute; top: -1px; left: 0; width: 42px; height: 2px; background: var(--cortex-acid); box-shadow: 52px 0 0 rgb(237 255 69 / 0.32); content: ""; }
+.values-page .value-manifest-meta p { color: var(--cortex-acid) !important; }
+.values-page .value-manifest-meta span, .values-page .value-manifest-signal span { color: rgb(242 232 208 / 0.72) !important; }
+.values-page .value-manifest-body h2, .values-page .value-manifest-body .value-last-line { color: var(--cortex-cream) !important; }
+.values-page .value-manifest-body > p { color: rgb(242 232 208 / 0.86) !important; }
+.values-page .value-manifest-body aside { border-color: var(--cortex-acid) !important; background: linear-gradient(90deg, rgb(237 255 69 / 0.12), transparent) !important; color: var(--cortex-cream) !important; }
+.values-page .value-manifest-signal i { background: var(--cortex-acid) !important; box-shadow: 11px -11px 0 -0.25px rgb(237 255 69 / 0.74), 22px -22px 0 -0.5px rgb(242 232 208 / 0.72) !important; }
+.values-page .value-manifest-signal em { border-color: var(--cortex-acid) !important; box-shadow: 0 0 0 5px rgb(237 255 69 / 0.08), 0 0 18px rgb(237 255 69 / 0.32) !important; }
+.values-page .value-manifest-01::after, .values-page .value-manifest-02 .value-manifest-body::after { background: linear-gradient(90deg, transparent, var(--cortex-acid)) !important; }
+.values-page .value-manifest-03 .value-manifest-meta, .values-page .value-manifest-04 .value-manifest-body { border-color: rgb(237 255 69 / 0.58) !important; }
+.values-page .values-build { border-color: rgb(242 232 208 / 0.35) !important; background: radial-gradient(ellipse at 50% 48%, rgb(242 232 208 / 0.14), transparent 24%), linear-gradient(120deg, var(--cortex-purple-deep), var(--cortex-purple)) !important; }
+.values-page .values-build-grid i { background: linear-gradient(transparent 5%, rgb(242 232 208 / 0.48) 50%, transparent 95%) !important; }
+.values-page .values-build-grid i:nth-child(2) { background: linear-gradient(transparent 8%, var(--cortex-acid) 50%, transparent 92%) !important; }
+.values-page .values-build p { color: var(--cortex-acid) !important; }
+.values-page .values-build span { color: rgb(242 232 208 / 0.76) !important; }
+
+/* The site-wide footer closes on a deep purple, never a black field. */
+footer.cortex-footer { background: var(--cortex-purple-deep) !important; border-color: rgb(242 232 208 / 0.32) !important; }
+footer.cortex-footer :is(.cortex-footer-calibration, .cortex-footer-manifest, .cortex-footer-legal) { border-color: rgb(242 232 208 / 0.22) !important; }
+footer.cortex-footer .cortex-footer-grid { background-image: linear-gradient(rgb(242 232 208 / 0.07) 1px, transparent 1px), linear-gradient(90deg, rgb(242 232 208 / 0.07) 1px, transparent 1px) !important; }
+footer.cortex-footer .cortex-footer-signal :is(i, b) { background: var(--cortex-acid) !important; }
+
+/* Asset authenticity: supplied artwork and video render in their native colors. */
+:is(.cortex-home, .document-page, .paper-page, .suite-paper) :is(img.engraving-white, .network-art, .paper-hermes, .final-cta-art, .values-hands, .access-engraving, .suite-act-art img) {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  opacity: 1 !important;
+}
+.handdrawn-hero-video { filter: none !important; }
+.handdrawn-hero-video ~ .hero-scrim {
+  background: linear-gradient(90deg, rgb(0 0 0 / 0.52) 0%, rgb(0 0 0 / 0.24) 40%, transparent 72%) !important;
+}
+.hero-depth-halo { opacity: 0 !important; }
+.document-page .hero-engraving::after,
+.suite-triad-frame::after {
+  background: linear-gradient(90deg, rgb(0 0 0 / 0.42) 0%, transparent 68%), linear-gradient(0deg, rgb(0 0 0 / 0.2) 0%, transparent 42%) !important;
+}
+.final-cta-scrim {
+  background: linear-gradient(90deg, rgb(0 0 0 / 0.56) 0%, rgb(0 0 0 / 0.18) 54%, transparent 100%) !important;
+}
+
+/* One-Pager becomes an actual cream document beneath a purple public masthead. */
+.paper-page { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+.paper-page .secondary-nav { background: var(--cortex-purple) !important; border-color: rgb(242 232 208 / 0.4) !important; }
+.paper-page .nav-cta { background: var(--cortex-acid) !important; color: var(--cortex-purple-deep) !important; }
+.paper-page .paper-masthead {
+  background: radial-gradient(ellipse at 50% 45%, rgb(237 255 69 / 0.2), transparent 26%), repeating-conic-gradient(from 12deg at 50% 45%, rgb(242 232 208 / 0.22) 0 0.3deg, transparent 0.3deg 3.7deg), var(--cortex-purple) !important;
+  color: var(--cortex-cream) !important;
+}
+.paper-page .paper-masthead::after { background: linear-gradient(90deg, rgb(58 31 134 / 0.22), transparent 28% 72%, rgb(58 31 134 / 0.22)) !important; }
+.paper-page .paper-masthead :is(h1, p, span, em) { color: var(--cortex-cream) !important; }
+.paper-page .paper-hermes { filter: invert(95%) sepia(13%) saturate(1030%) hue-rotate(334deg) brightness(101%) contrast(91%) !important; mix-blend-mode: screen; }
+.paper-page .paper-actions :is(.paper-download, .paper-share) { border-color: rgb(242 232 208 / 0.76) !important; color: var(--cortex-cream) !important; }
+.paper-page .paper-actions :is(.paper-download, .paper-share):hover { background: var(--cortex-acid) !important; border-color: var(--cortex-acid) !important; color: var(--cortex-purple-deep) !important; }
+.paper-page .paper-section-nav { background: var(--cortex-paper) !important; border-color: rgb(58 31 134 / 0.22) !important; }
+.paper-page .paper-section-nav a { color: var(--cortex-purple-deep) !important; border-color: rgb(58 31 134 / 0.2) !important; }
+.paper-page .paper-section-nav a:hover { color: var(--cortex-purple) !important; }
+.paper-page .paper-document { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+.paper-page .paper-lede { border-left-color: var(--cortex-acid) !important; background: rgb(100 56 216 / 0.09) !important; }
+.paper-page .paper-lede > p:last-child,
+.paper-page .paper-block p { color: var(--cortex-purple-deep) !important; }
+.paper-page .paper-stamp { border-color: var(--cortex-purple) !important; color: var(--cortex-purple) !important; }
+.paper-page .paper-block { border-color: rgb(58 31 134 / 0.2) !important; }
+.paper-page .paper-block h2 { color: var(--cortex-purple) !important; }
+.paper-page .paper-problem-grid { border-color: rgb(58 31 134 / 0.36) !important; background: rgb(58 31 134 / 0.36) !important; }
+.paper-page .paper-problem-grid span { background: var(--cortex-paper) !important; color: var(--cortex-purple-deep) !important; }
+
+/* Shared document pages keep purple as the public-facing stage and cream as the reading field. */
+.document-page .document-hero {
+  background: radial-gradient(ellipse at 70% 44%, rgb(237 255 69 / 0.13), transparent 25%), linear-gradient(126deg, var(--cortex-purple-deep), var(--cortex-purple) 66%, var(--cortex-purple-surface)) !important;
+  border-color: rgb(242 232 208 / 0.34) !important;
+}
+.document-page .hero-engraving::after { background: radial-gradient(ellipse at 72% 50%, transparent 0 18%, rgb(58 31 134 / 0.38) 50%, var(--cortex-purple-deep) 100%), linear-gradient(90deg, var(--cortex-purple-deep) 0%, rgb(58 31 134 / 0.52) 40%, transparent 72%) !important; }
+.document-page :is(.document-hero h1, .document-hero-content > p:not(.eyebrow), .hero-stamp) { color: var(--cortex-cream) !important; }
+.document-page .document-section,
+.document-page .faq-wrap,
+.document-page .pillar-stack,
+.document-page .feature-matrix,
+.document-page .timeline-section {
+  background: var(--cortex-paper) !important;
+  border-color: rgb(58 31 134 / 0.2) !important;
+  color: var(--cortex-purple-deep) !important;
+}
+.document-page :is(.document-section, .faq-wrap, .pillar-stack, .feature-matrix, .timeline-section) :is(h2, h3, p, span, strong, b, svg) { color: var(--cortex-purple-deep) !important; }
+.document-page :is(.document-section, .faq-wrap, .pillar-stack, .feature-matrix, .timeline-section) .document-label { border-color: var(--cortex-purple) !important; color: var(--cortex-purple) !important; }
+.document-page :is(.document-section, .faq-wrap, .pillar-stack, .feature-matrix, .timeline-section) :is(.faq-item, .pillar, .feature-line, .timeline-node) { border-color: rgb(58 31 134 / 0.2) !important; }
+.document-page :is(.document-section, .faq-wrap, .pillar-stack, .feature-matrix, .timeline-section) :is(.pull-line, .timeline-node i) { color: var(--cortex-purple) !important; background-color: var(--cortex-purple) !important; }
+.document-page .access-band,
+.document-page .access-dark {
+  background: radial-gradient(ellipse at 50% 43%, rgb(237 255 69 / 0.18), transparent 25%), repeating-conic-gradient(from 0deg at 50% 43%, rgb(242 232 208 / 0.23) 0 0.28deg, transparent 0.28deg 4deg), var(--cortex-purple-deep) !important;
+  color: var(--cortex-cream) !important;
+}
+.document-page .access-band::before { border-color: rgb(242 232 208 / 0.55) !important; }
+.document-page .access-band :is(h2, p, span) { color: var(--cortex-cream) !important; }
+
+/* Acid is intentionally confined to small signal marks, never a panel or a CTA surface. */
+.button-quiet { border-color: var(--cortex-cream) !important; color: var(--cortex-cream) !important; }
+.paper-page .nav-cta { background: var(--cortex-cream) !important; border-color: var(--cortex-cream) !important; color: var(--cortex-purple-deep) !important; }
+.paper-page .paper-actions :is(.paper-download, .paper-share):hover { background: rgb(242 232 208 / 0.18) !important; border-color: var(--cortex-cream) !important; color: var(--cortex-cream) !important; }
+.paper-page .paper-masthead { background: repeating-conic-gradient(from 12deg at 50% 45%, rgb(242 232 208 / 0.2) 0 0.3deg, transparent 0.3deg 3.7deg), var(--cortex-purple) !important; }
+.document-page .document-hero { background: linear-gradient(126deg, var(--cortex-purple-deep), var(--cortex-purple) 66%, var(--cortex-purple-surface)) !important; }
+.document-page .access-band,
+.document-page .access-dark { background: repeating-conic-gradient(from 0deg at 50% 43%, rgb(242 232 208 / 0.2) 0 0.28deg, transparent 0.28deg 4deg), var(--cortex-purple-deep) !important; }
+.morphic-official-mobile .morphic-official-active { box-shadow: 0 0 0 4px var(--cortex-purple-deep), 0 0 0 6px var(--cortex-cream) !important; }
+
+@media (max-width: 767px) {
+  .morphic-official-mobile .morphic-official-active { box-shadow: 0 0 0 4px var(--cortex-purple-deep), 0 0 0 6px var(--cortex-acid) !important; }
+  .morphic-official-mobile .morphic-official-link { border-color: rgb(242 232 208 / 0.22) !important; }
+}

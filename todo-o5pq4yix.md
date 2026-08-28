@@ -1,0 +1,17 @@
+- [x] Inspect the current secondary-page architecture and shared routing.
+- [x] Create the Terms placeholder, preserve the synchronized Privacy policy, and link both legal routes from the footer.
+- [x] Apply the horizontally dispersed shared footer to every secondary page.
+- [x] Validate desktop and mobile layouts, route navigation, TypeScript, automated checks, and production build.
+- [x] Increase the shared footer CORTEX logo and wordmark scale, then validate the horizontal composition.
+- [x] Add smooth link hover animations and placeholder social media icons to the shared footer.
+- [x] Remove the redundant Open a Channel contact section and validate the page transition to the footer.
+- [x] Simplify the shared header access label and validate the desktop and mobile navigation composition.
+- [x] Audit every public route for the shared footer and resolve any inconsistency.
+- [x] Add an anime.js-powered footer motto graphic that activates on scroll into view.
+- [x] Validate footer coverage, motion, desktop/mobile layouts, and production build.
+- [x] Strengthen Values-page accent hierarchy and retone the hand image for the purple CORTEX system.
+- [x] Replace the Starter-page ending artwork with a dithered cream-and-purple duotone version and validate its final CTA presentation.
+- [x] Replace the Values-page hand artwork with a dithered cream-and-purple duotone version and validate its integration.
+- [x] Correct the Home final CTA artwork to a cool white/cream-and-purple dither without a yellow cast.
+- [x] Change the loading intro to a cream surface with purple linework and verify its transition.
+- [ ] Save a checkpoint and deliver the update.

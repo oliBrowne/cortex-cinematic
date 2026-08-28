@@ -1,0 +1,52 @@
+/* Phone story layout: one narrative beat occupies one distinct reading zone at a time. */
+@media (max-width: 767px) {
+  .cortex-home .left-rail,
+  .cortex-home .right-rail {
+    right: 1.25rem;
+    left: 1.25rem;
+    width: auto;
+    max-width: none;
+  }
+
+  .cortex-home .cinema-beat:not(.final-beat) {
+    padding: 14px 15px 16px;
+    border-left: 1px solid rgb(238 233 221 / .42);
+    background: linear-gradient(90deg, rgb(10 10 10 / .86), rgb(10 10 10 / .52) 74%, transparent);
+    box-shadow: 0 14px 34px rgb(0 0 0 / .18);
+    backdrop-filter: blur(5px);
+  }
+
+  .cortex-home .cinema-beat.left-rail.top-\[29\%\] { top: 20% !important; }
+  .cortex-home .cinema-beat.right-rail { top: auto !important; bottom: 12% !important; }
+  .cortex-home .cinema-beat.left-rail.top-\[42\%\] { top: 20% !important; }
+  .cortex-home .final-beat {
+    top: auto !important;
+    right: 1.25rem;
+    bottom: 10% !important;
+    left: 1.25rem;
+    width: auto;
+    max-width: none;
+    padding: 16px;
+    border-left: 1px solid rgb(238 233 221 / .52);
+    background: linear-gradient(90deg, rgb(10 10 10 / .9), rgb(10 10 10 / .56) 78%, transparent);
+  }
+
+  .cortex-home .arrival-lockup { display: none; }
+  .cortex-home .hero-title { font-size: clamp(2.55rem, 12vw, 3.7rem); }
+  .cortex-home .cinema-heading { font-size: clamp(1.75rem, 8.4vw, 2.35rem); }
+  .cortex-home .hero-copy,
+  .cortex-home .cinema-copy { max-width: 100%; font-size: .9rem; line-height: 1.58; }
+  .cortex-home .button-quiet { padding-block: 9px; }
+
+  .cortex-home .hardware-logo-rail { width: 100%; min-height: auto; padding-top: 45px; }
+  .cortex-home .hardware-rail-brand { min-height: 86px; }
+  .cortex-home .hardware-rail-brand::after { right: 5px; }
+  .cortex-home .deployment-head,
+  .cortex-home .deployment-row { gap: 12px; }
+  .cortex-home .deployment-head strong { font-size: 7px; line-height: 1.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cortex-home .cinema-beat:not(.final-beat),
+  .cortex-home .final-beat { backdrop-filter: none; }
+}

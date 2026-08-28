@@ -1,0 +1,32 @@
+/* Final small-screen treatment: a concise reading flow around the filmed appliance proof. */
+@media (max-width: 767px) {
+  .edge-cage { gap:27px; min-height:770px; padding:7.35rem 1.25rem 4.25rem; }
+  .edge-cage-copy { max-width:410px; }
+  .edge-cage-copy h1 { margin:18px 0; font-size:clamp(2.75rem,12.5vw,4rem); line-height:.84; }
+  .edge-cage-copy>p:not(.eyebrow) { font-size:.93rem; line-height:1.62; }
+  .edge-cage-copy .button-primary { width:100%; justify-content:center; margin-top:23px; }
+  .edge-appliance-stage { width:min(100%,430px); height:285px; }
+  .edge-proof-plate { top:0; right:0; bottom:17px; left:0; }
+  .edge-plate-appliance { bottom:23%; left:7%; width:59%; height:48%; padding:10px; }
+  .edge-plate-vent { gap:2px; margin:12px 0 10px; padding:6px; }
+  .edge-plate-vent i { height:28px; }
+  .edge-plate-console { gap:6px; font-size:7px; }
+  .edge-plate-appliance footer { bottom:9px; left:10px; font-size:5px; }
+  .edge-plate-boundary { top:22%; right:6%; bottom:19%; gap:6px; }
+  .edge-plate-boundary>b { font-size:6px; }
+  .edge-plate-boundary small { font-size:5px; }
+  .edge-plate-egress { right:8%; bottom:21%; left:20%; gap:6px; font-size:5px; }
+  .edge-plate-egress em { font-size:5px; }
+  .edge-plate-caption { right:9px; bottom:8px; left:9px; padding-top:7px; font-size:5px; letter-spacing:.12em; }
+  .edge-proof-note { gap:5px; font-size:6px; letter-spacing:.11em; }
+  .edge-proof-note span { width:15px; height:15px; font-size:5px; }
+  .edge-proof-note i { display:none; }
+  .edge-proof-note-unit { bottom:26%; left:5%; flex-direction:row; }
+  .edge-proof-note-wall { top:11%; right:5%; }
+  .edge-proof-note-cable { right:5%; bottom:18%; display:flex; }
+  .edge-proof-caption { right:9px; bottom:8px; left:9px; padding-top:7px; font-size:5px; letter-spacing:.12em; }
+  .edge-proof-signal { right:-3%; left:-3%; }
+  .edge-proof-signal span { height:41px; }
+  .edge-cage-foot { right:1.25rem; bottom:14px; left:1.25rem; justify-content:center; gap:7px; font-size:5px; letter-spacing:.12em; }
+  .edge-cage-foot span:last-child, .edge-cage-foot i:nth-of-type(2) { display:flex; }
+}

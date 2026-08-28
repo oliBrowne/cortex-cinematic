@@ -1,0 +1,13 @@
+CORTEX Vulnerability Disclosure Policy
+
+Reporting a potential security issue
+Send reports to hello@cortexbrain.ai with the subject line "Security Report." Include a clear description, the affected URL or feature, steps to reproduce, and any evidence that helps us understand the issue. Please provide a contact method if you would like a response.
+
+Good-faith research
+We welcome good-faith reports. Please avoid accessing, changing, deleting, or disclosing data that does not belong to you; interrupting services; using social engineering; or testing in a way that could degrade availability. Do not publicly disclose a suspected vulnerability until CORTEX has had a reasonable opportunity to investigate and remediate it.
+
+What happens next
+We will review submitted reports, prioritize confirmed issues by potential impact, and communicate with the reporter when contact information is provided. This policy does not authorize activity that violates law or third-party rights.
+
+Scope
+This policy covers the public CORTEX website at cortexbrain.ai. CORTEX customer environments, integrations, and product deployments may have additional reporting paths in their applicable agreement or deployment documentation.

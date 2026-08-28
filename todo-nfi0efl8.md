@@ -1,0 +1,19 @@
+- [x] Tune the Edge hero’s mobile footage crop and annotations, validate the result, and save a checkpoint.
+- [x] Add an accessible mobile tap-to-reveal detail layer for the static Edge appliance field plate.
+- [x] Remove the One-Pager closing image and eliminate the purple visual treatment with a neutral CORTEX field-document layout.
+- [x] Validate the combined One-Pager and Edge updates, including type checking, tests, build, rendering, and detail-state wiring.
+- [x] Create a compact branded One-Pager PDF, add its download action, retarget the CTA to a design-partner intake subject, validate both, and save a checkpoint.
+- [x] Track One-Pager PDF download clicks with a resilient privacy-conscious analytics event, validate it, and save a checkpoint.
+- [x] Add an accessible One-Pager Share control that copies the canonical link, validate its feedback state, and save a checkpoint.
+- [x] Use native mobile sharing when available and show a global success toast when the One-Pager link is copied, then validate and checkpoint the update.
+- [x] Add One-Pager action hover, tooltips, and PDF preparation feedback, plus alternating left-to-right and right-to-left image reveals across Suite imagery; validate and checkpoint the combined update.
+- [x] Apply a restrained olive Sight/Cornea accent in light-mode Suite while enforcing black-and-white imagery, then validate and checkpoint the refinement.
+- [x] Add subtle Memory, Judgment, and Sight signatures to Suite, including a Sight status mark in its contents rail; apply olive and monochrome rules to the printable One-Pager; validate and checkpoint.
+- [x] Add accessible smooth scrolling to Suite contents-rail navigation links, validate the anchor landing behavior, and save a checkpoint.
+- [x] Make the Suite contents rail sticky and horizontally reachable on mobile, validate offsets and scroll behavior, and save a checkpoint.
+- [x] Keep the Suite header dark in light mode while preserving its readable controls, then validate it alongside the sticky mobile rail and save a checkpoint.
+- [x] Remove the user-facing light-mode toggle, preserve the current visual mode and navigation layout, then validate and save a checkpoint.
+- [x] Review the uploaded genuine imagery, replace the lower-quality screenshot treatments at the best-fit CORTEX proof points, validate responsive presentation, and save a checkpoint.
+- [x] Identify and remove the unnecessary white bars on the Suite page while retaining functional navigation and image-reveal behavior, then validate and checkpoint.
+- [x] Remove unintended broad inline styling from the visual edit and keep only the intended near-black Suite header and contents bar, then validate and checkpoint.
+- [x] Restore the ASUS logo in the intended hardware presentation, verify responsive contrast and placement, and save a checkpoint.

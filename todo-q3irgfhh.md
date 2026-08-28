@@ -1,0 +1,46 @@
+- [x] Document the required hosting-level HSTS and frame-embedding security headers.
+- [x] Add a scheduled production dependency-audit workflow for continuous integration.
+- [x] Make the email-draft privacy notice consistently visible from the public site.
+- [x] Validate the completed privacy and security follow-through work and save a checkpoint.
+- [x] Verify the dedicated Privacy Policy page and all public footer links.
+- [x] Add a lightweight consent banner with a direct Privacy Policy link.
+- [x] Validate the consent state, footer links, and responsive banner layout.
+- [x] Assess remaining application, deployment, and operational security gaps.
+- [x] Prioritize the next security controls by impact and implementation owner.
+- [x] Review existing response headers, workflow coverage, and public reporting-file content.
+- [x] Expand CI security scanning and automated dependency review.
+- [x] Publish and validate the standards-aligned security.txt process description.
+- [ ] Apply response headers at the production hosting edge, which cannot be changed from this static frontend project.
+- [x] Confirm the current legal-page route and shared footer structure.
+- [x] Draft a public-site Terms of Service page for CORTEX.
+- [x] Link Terms beside Privacy in the shared footer and validate both routes.
+- [x] Sync the shared project to the latest canonical revision and verify merge status.
+- [x] Capture the current finalized revision and source manifest for the backup.
+- [x] Create the labeled ultra-realistic website version backup folder.
+- [x] Verify the backup is complete and document how it differs from a platform data export.
+- [x] Locate and assess the newly attached hand-drawn video and current hero media behavior.
+- [x] Replace the live hero media and adapt runtime-dependent motion to the new video.
+- [x] Validate desktop and mobile playback while confirming the ultra-realistic backup remains untouched.
+- [x] Inspect the hero’s scroll-to-video synchronization for reversal and stalling risks.
+- [x] Refine the reversible scroll timeline and video-seeking behavior.
+- [x] Validate forward and reverse hero behavior on desktop and mobile.
+- [x] Map the live visual system to the supplied white-and-purple design tokens.
+- [x] Refactor shared palette, typography, and visual surfaces without changing copy.
+- [x] Adapt hero and page-level treatments to the new visual system only.
+- [x] Validate the migrated aesthetic on desktop and mobile core routes.
+- [x] Identify residual black surfaces, acid-yellow overuse, and hardware-logo contrast issues.
+- [x] Rebalance accent usage and render hardware logos black on cream surfaces.
+- [x] Replace remaining black panels with purple-and-cream treatments and validate contrast.
+- [x] Identify filters, blend modes, and overlays tinting supplied images or video.
+- [x] Remove asset recoloring while retaining contrast-safe interface surfaces.
+- [x] Verify original image and video colors across core routes and screen sizes.
+- [x] Identify any remaining acid-green surfaces that exceed a small signal accent.
+- [x] Replace oversized acid-green treatments with purple or cream alternatives.
+- [x] Validate the restrained-accent system on desktop and mobile.
+- [x] Locate the Values-page handshake source asset and current presentation.
+- [x] Create a cream-and-purple dithered version that preserves the source composition.
+- [x] Integrate and validate the selective handshake treatment without recoloring other assets.
+- [x] Assess the One-Pager’s current document hierarchy, visual density, and mobile layout.
+- [x] Rebuild the One-Pager masthead, section rhythm, and evidence presentation.
+- [x] Refine One-Pager responsiveness and contrast without changing approved content.
+- [x] Validate the refreshed One-Pager on desktop and mobile.

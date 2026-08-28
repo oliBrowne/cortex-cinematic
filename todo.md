@@ -1,0 +1,144 @@
+- [x] Inspect the linked Cortex website for suitable visual assets and their direct source URLs.
+- [x] Remove all still-image references derived from the originally supplied assets.
+- [x] Preserve the scroll-scrubbed opening video sequence without static image overlays.
+- [x] Integrate approved linked-site graphics into the editorial sections.
+- [ ] Validate desktop and mobile layouts, save a checkpoint, and deliver the revision.
+- [ ] Inspect Suite, One-Pager, FAQ, Values, and The Edge public pages for their visual and content patterns. Suite inspected.
+- [x] Build a shared multi-page navigation and footer system.
+- [x] Recreate the Suite page using its public-page visual language.
+- [x] Recreate the One-Pager, FAQ, Values, and The Edge pages using their respective public-page content structures.
+- [x] Verify all secondary-page navigation and responsive layouts. Desktop and mobile routes verified.
+- [x] Replace the broken CSS pseudo-illustrations with the supplied white-on-black node and engraving assets.
+- [x] Restore fully bidirectional scroll-video synchronization for forward and backward traversal.
+- [x] Add a reference-inspired end-of-scroll CORTEX logo arrival sequence.
+- [x] Add the supplied connected-node graphic to the Suite composition with white-on-black treatment.
+- [x] Map brain, heart, eye, Hermes, vine, and owl engravings to appropriate secondary-page moments.
+- [x] Validate visuals and backward scroll behavior on desktop and mobile. Desktop and mobile visual review complete; desktop reverse-scroll verification complete.
+- [x] Audit visual coverage to identify every supplied asset not currently presented in the site.
+- [x] Add the remaining supplied engravings to intentional, consistent page moments.
+- [x] Install and use motion/react for shared reveal, route-hero, and visual-art transitions.
+- [x] Standardize animation timings, easing, and reduced-motion behavior across all pages.
+- [x] Validate desktop and mobile visual coverage and motion behavior.
+- [x] Preserve the user’s preview edit for the “The box is on your floor” evidence panel in source.
+- [x] Preserve the user’s preview edit for the “The memory stays inside” evidence panel in source.
+- [x] Convert “The box is on your floor” into a flush, full-width animated evidence section.
+- [x] Validate the appliance animation and full-bleed layout on desktop and mobile.
+- [ ] Inspect the requested Shadcn MCP initialization and determine whether it adds a project-useful capability.
+- [ ] Apply only the appropriate project-level Shadcn integration and validate that it preserves the CORTEX site.
+- [x] Install the requested @kokonutui/morphic-navbar component and adapt it to CORTEX navigation.
+- [x] Validate desktop and mobile navigation behavior across all CORTEX routes.
+- [x] Map the supplied Sunburst interaction to a CORTEX system-architecture explorer.
+- [x] Build the customized radial explorer with CORTEX terminology, monochrome visuals, and motion interactions.
+- [x] Validate the radial explorer on desktop and mobile.
+- [ ] Install Anime.js using the requested `animejs/animation` import path and apply a CORTEX-specific motion treatment.
+- [ ] Install the requested @skiper-ui/skiper40 component and identify an appropriate CORTEX presentation use.
+- [ ] Install @skiper-ui/skiper71 and customize it for the Suite page’s Memory, Judgment, and Proof narrative.
+- [x] Audit every user-supplied asset against visible placements in the current CORTEX site.
+- [x] Integrate each remaining supplied asset into a distinct, visible CORTEX page moment.
+- [x] Validate full asset coverage at desktop and mobile breakpoints.
+- [ ] Adapt the installed Skiper 40 component as the Suite-page fallback because Skiper 71 is unavailable from the registry.
+- [ ] Use Anime.js via `animejs/animation` for a focused CORTEX motion treatment.
+- [ ] Validate the final combined asset, Anime.js, and Suite-page enhancement pass.
+- [ ] Retry the explicit @skiper-ui/skiper71 installation request.
+- [x] Use the heart, brain, and eye images as the Suite component’s three visual panels.
+- [x] Build the Suite Skiper-inspired triad with the requested heart, brain, and eye visual panels.
+- [x] Retain a Skiper 40 hover-link treatment within the Suite triad controls.
+- [x] Finalize the Suite heart, brain, and eye visual triad and verify it alongside the Anime.js motion system.
+- [x] Adapt the supplied Skiper video trigger and clip-path overlay interaction for the CORTEX cinematic source video.
+- [ ] Validate video playback, controls, close behavior, and responsive overlay layout.
+- [x] Remove the custom video overlay and its trigger from the CORTEX home page.
+- [x] Map and implement original-CORTEX-inspired scroll staging, radial-field movement, appliance/node transitions, and end-mark arrival.
+- [x] Validate the new motion choreography on desktop and mobile.
+- [x] Catalogue the original-CORTEX-inspired motion patterns for adaptation.
+- [ ] Validate the combined Anime.js and Skiper integrations across desktop and mobile.
+- [x] Validate the combined Anime.js and Skiper integrations across desktop and mobile.
+- [x] Remove the distracting white compass-style overlay from the opening CORTEX cinematic stage.
+- [x] Validate that the opening video remains unobstructed at desktop and mobile sizes.
+- [x] Locate and remove the remaining compass-style visual treatment reported in the opening stage.
+- [x] Verify the user’s requested opening-stage edit and save a corrected checkpoint.
+- [x] Rebuild Suite as a cream editorial page with one-feature-at-a-time alternating text and image panels.
+- [x] Place the supplied brain, heart, eye, Hermes, neural brain, vine, owl, and field artwork in the Suite sequence.
+- [x] Remove the existing dark Suite triad so the new sequential reference layout is unambiguous.
+- [x] Validate Suite’s alternating feature layout on desktop and mobile.
+- [x] Add the supplied provisioning terminal verbatim as the final Suite-page panel.
+- [x] Replace the cream-and-violet Suite presentation with the CORTEX near-black and white/ivory visual system.
+- [x] Preserve the alternating, one-feature-at-a-time Suite content and image layout.
+- [x] Validate the corrected black-and-white Suite page on desktop and mobile.
+- [ ] Remove the reference-only image at the user-marked Suite feature panel.
+- [ ] Verify the corrected Suite sequence and save the requested checkpoint.
+- [x] Make the CORTEX radial explorer intentionally asymmetric rather than a balanced pie.
+- [x] Replace the appliance-estate background image with an original animated hardware-estate component powered by Anime.js.
+- [x] Replace the marked reused home visual with a distinct treatment.
+- [x] Remove the user-marked home section at the reported target.
+- [x] Add a local-compute hardware compatibility strip with credible supported-box types and company marks.
+- [x] Add motion choreography to the marked home content block.
+- [ ] Validate all manually applied visual-editor changes on desktop and mobile.
+- [x] Remove the home-page image marked by the user as reference-only at the visual-editor target.
+- [x] Validate the Suite heart, brain, and eye visual triad controls.
+- [ ] Install Anime.js and use `animejs/animation` for a CORTEX-specific visual treatment.
+- [ ] Validate the Anime.js enhancement across desktop and mobile.
+- [x] Remove the unintended black box at the opening stage’s bottom-right corner.
+- [x] Preserve the concurrent Suite visual revision and reconcile it with the latest local CORTEX home fixes.
+- [x] Validate the reconciled home and Suite pages, then save the requested checkpoint.
+- [x] Audit the adapted Morphic Navbar against the supplied KokonutUI interaction pattern.
+- [x] Validate the refined route-aware active pill on desktop and mobile navigation.
+- [x] Replace the circular sunburst target with a non-circular CORTEX architecture diagram.
+- [x] Rebuild the broken appliance-estate SVG and card target as a robust responsive component.
+- [x] Validate both corrected visual-editor targets on desktop and mobile, then checkpoint.
+- [x] Add the requested engraving provenance and governance statement to the CORTEX closing area.
+- [x] Validate the closing attribution and governance statement across desktop and mobile, then checkpoint.
+- [x] Replace the custom navigation adaptation with the supplied KokonutUI Morphic Navbar structure.
+- [x] Validate the requested rounded active-pill navigation behavior on desktop and mobile, then checkpoint.
+- [x] Add HOME to the supplied Morphic Navbar and make its source-pattern treatment visibly distinct from the prior header.
+- [x] Validate the updated desktop header and mobile navigation, then checkpoint.
+- [x] Replace the legacy vertical hamburger links with the supplied Morphic Navbar pattern on mobile.
+- [x] Validate the unified mobile navigation at the reported viewport, then checkpoint.
+- [x] Replace the unaccepted desktop header navigation with the direct supplied Morphic Navbar layout.
+- [ ] Validate the direct desktop Morphic implementation and mobile fallback, then checkpoint.
+- [ ] Inspect and integrate the user-provided navbar archive as the live CORTEX navigation component.
+- [x] Inspect and integrate the user-provided navbar archive as the live CORTEX navigation component.
+- [x] Validate the archive-based navbar across desktop and mobile, then checkpoint.
+- [x] Add subtle inactive-link hover feedback to the archive-derived Morphic Navbar.
+- [x] Validate the hover enhancement and reduced-motion fallback, then checkpoint.
+- [x] Install the official KokonutUI Morphic Navbar through its supported package workflow.
+- [x] Replace the current navbar with the installed official component source and validate it, then checkpoint.
+- [x] Increase the official desktop Morphic Navbar dimensions while preserving its supplied structure.
+- [x] Add keyboard focus-visible styles and automated navigation accessibility checks.
+- [x] Validate the larger responsive navbar and keyboard focus flow, then checkpoint.
+- [x] Replace the visual-editor-marked secondary-page video with a distinct non-video CORTEX treatment.
+- [x] Validate the revised secondary-page section on desktop and mobile, then checkpoint.
+- [x] Remove purple boundary styling and purple imagery from the One-Pager.
+- [x] Validate the repaired near-black and warm-ivory One-Pager on desktop and mobile, then checkpoint.
+- [x] Audit and strengthen black-on-black hierarchy and warm-ivory typography contrast on the One-Pager.
+- [x] Validate the contrast-refined One-Pager on desktop and mobile, then checkpoint.
+- [x] Enlarge each hardware-reference company logo in the Home appliance section.
+- [x] Validate Suite header consistency on desktop and mobile, then checkpoint.
+- [x] Identify and remove the One-Pager overlap and density issues reported by the user.
+- [x] Validate the decongested One-Pager on desktop and mobile, then checkpoint.
+- [x] Reduce the One-Pager proof matrix to fewer, clearer evidence groups.
+- [x] Add smooth-scrolling anchor links for the major One-Pager sections.
+- [x] Validate the simplified matrix and in-page navigation on desktop and mobile, then checkpoint.
+- [x] Restore the marked secondary-page header navigation area to solid CORTEX black.
+- [x] Validate the solid-black secondary header on desktop and mobile, then checkpoint.
+- [x] Standardize the active-pill colors and contrast across all CORTEX routes and theme states.
+- [x] Validate unified active-pill rendering and interaction on desktop and mobile, then checkpoint.
+- [x] Render every Home hardware-reference company logo in solid black.
+- [x] Validate black hardware-logo contrast and scaling on desktop and mobile, then checkpoint.
+- [x] Render hardware-reference logos white in dark mode and black in light mode.
+- [x] Validate theme-aware logo contrast and sizing on desktop and mobile, then checkpoint.
+- [x] Diagnose and remove scroll sticking or jitter across the home scrub, fixed layers, and in-page anchors.
+- [x] Validate continuous forward/reverse scroll behavior on desktop and mobile, then checkpoint.
+- [x] Reset each top-level route to the page top when navigating or reselecting the active navigation item.
+- [x] Validate desktop and mobile navigation starts, then checkpoint.
+- [x] Smoothly return an already-active top-level route to the page top while respecting reduced-motion preferences.
+- [x] Add automated scroll-reset coverage for every desktop and mobile top-level navigation destination.
+- [x] Validate active-route smooth scrolling and cross-route resets, then checkpoint.
+- [x] Force CORTEX to the dark theme and remove system-preference matching and user theme switching.
+- [x] Remove light-only UI and styling behavior that can surface outside the fixed dark presentation.
+- [x] Validate dark contrast across Home, Suite, One-Pager, and mobile navigation, then checkpoint.
+- [x] Remove retired light-mode source files and redundant theme-switching code.
+- [x] Refine inactive navigation hover feedback for the fixed dark presentation.
+- [x] Validate code cleanup, dark-mode navigation interactions, and responsive layouts, then checkpoint.
+- [x] Polish Suite headline hierarchy with engaging, clear, boundary-specific CORTEX language.
+- [x] Audit active Suite and shared CSS, removing only selectors proven to be unused.
+- [x] Validate Suite copy, CSS integrity, and responsive routes, then checkpoint.

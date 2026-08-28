@@ -1,0 +1,30 @@
+/* The source animation moves through hardware, cable, and a completed brain.
+   The stronger left ink wash holds copy contrast over its light paper field. */
+.handdrawn-hero-video {
+  filter: saturate(1.08) contrast(1.08);
+}
+
+.handdrawn-hero-video ~ .hero-scrim {
+  background:
+    linear-gradient(90deg, rgb(13 7 26 / 0.82) 0%, rgb(18 9 38 / 0.62) 32%, rgb(18 9 38 / 0.18) 61%, rgb(9 5 17 / 0.46) 100%),
+    linear-gradient(0deg, rgb(8 5 18 / 0.25), transparent 38%, rgb(8 5 18 / 0.08));
+}
+
+.handdrawn-hero-video ~ .hero-depth-halo {
+  background:
+    radial-gradient(ellipse at 68% 42%, rgb(170 129 255 / 0.2), transparent 25%),
+    radial-gradient(ellipse at 14% 73%, rgb(6 3 15 / 0.28), transparent 34%);
+  mix-blend-mode: screen;
+}
+
+@media (max-width: 767px) {
+  .handdrawn-hero-video ~ .hero-scrim {
+    background: linear-gradient(180deg, rgb(12 7 24 / 0.66) 0%, rgb(18 9 38 / 0.23) 48%, rgb(10 6 21 / 0.75) 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .handdrawn-hero-video {
+    filter: none;
+  }
+}
